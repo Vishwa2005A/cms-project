@@ -10,6 +10,7 @@ import Intro from "../pages/dashboard/Intro";
 import Profile from "../pages/dashboard/Profile";
 import DashboardLayouts from "../layout/Dashboard.Layouts";
 import PrivateRoute from "./PrivateRoute";
+import Admin from "../pages/dashboard/Admin";
 
 
 
@@ -31,6 +32,7 @@ export default function AppRoutes() {
 					</PrivateRoute>
 				}
 			>
+				<Route path="/dashboard/admin" element={<Admin/>} />
 				<Route path="/dashboard/intro" element={<Intro />} />
 				<Route path="/dashboard/adddata" element={<AddData />} />
 				<Route path="/dashboard/profile" element={<Profile />} />
